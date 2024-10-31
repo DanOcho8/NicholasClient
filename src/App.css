@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.signup-container {
+  background-image: url('/Users/danielochoa/nicholaspedroza/nicholas-pedroza/client/src/IMG_3265.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack form fields vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-form h2, p {
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'DesirableCalligraphy', cursive;
+}
+
+.signup-form input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'DesirableCalligraphy', cursive;
+}
+
+.signup-form button:hover {
+  background-color: #555;
+}
+
+@font-face {
+  font-family: 'DesirableCalligraphy';
+  src: url('./fonts/Desirable Calligraphy.ttf') format('truetype'),
+       url('./fonts/Desirable Calligraphy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'DesirableSans';
+  src: url('./fonts/Desirable Sans.ttf') format('truetype'),
+       url('./fonts/Desirable Sans.otf') format('opentype');
+}
+
+body {
+  font-family: 'DesirableSans', sans-serif; /* Default font for body */
+}
+
+h2, h3 {
+  font-family: 'DesirableCalligraphy', cursive; /* Use Calligraphy for headings */
+}
+
+h3 {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .signup-form {
+    width: 90%;
+  }
+
+  .signup-form input, .signup-form button {
+    width: 100%;
+  }
+}
