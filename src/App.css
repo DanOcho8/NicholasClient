@@ -38,7 +38,7 @@
 }
 
 .signup-container {
-  background-image: url('/IMG_3265.jpg');
+  background-image: url('/public/IMG_3265.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
