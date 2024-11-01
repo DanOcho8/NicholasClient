@@ -23,7 +23,7 @@ function App() {
     try {
       // Send data to the backend
       const response = await axios.post(
-        "https://nicholas-website-2fee10db19de.herokuapp.com/", // Updated endpoint URL
+        "https://nicholas-website-2fee10db19de.herokuapp.com/users", // Updated endpoint URL
         formData
       );
       console.log(response.data.message); // Confirm success message from backend
