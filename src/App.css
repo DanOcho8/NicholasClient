@@ -114,12 +114,16 @@ h3 {
   color: white;
 }
 
+p {
+  font-size: 20px;
+}
+
 @media (max-width: 768px) {
   .signup-form {
     width: 90%;
   }
 
-  .signup-form input, .signup-form button {
-    width: 100%;
+  .signup-form input{
+    width: 75%;
   }
 }
