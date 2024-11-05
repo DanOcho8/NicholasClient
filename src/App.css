@@ -77,8 +77,8 @@
 
 .signup-form button {
   padding: 10px 20px;
-  border: none;
-  background-color: #333;
+  border: 1px solid #fff;
+  background-color: transparent;
   color: #fff;
   border-radius: 5px;
   font-size: 14px;
