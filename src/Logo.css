@@ -1,0 +1,15 @@
+/* Center the logo at the top */
+.logo-container {
+  text-align: center;
+  margin-top: 100px; /* Adjust spacing */
+}
+
+/* Logo styling */
+.logo {
+  width: 450px; /* Adjust size */
+  display: block;
+  height: 40vh;
+  margin: 0 auto; /* Centers it horizontally */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  object-fit: contain;
+}

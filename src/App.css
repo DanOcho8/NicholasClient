@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 50vmin;
   pointer-events: none;
 }
 
@@ -37,18 +37,47 @@
   }
 }
 
-.signup-container {
-  background-image: url('/public/IMG_3265.jpg');
+.signup-form input,
+.signup-form button,
+.signup-form h2,
+.signup-form p {
+  font-family: "Anton", sans-serif;
+  text-transform: none; /* Optional for bold look */
+  font-weight: bold;
+}
+
+body {
+  font-family: "Anton", sans-serif;
+  background-image: url("/public/whitebg.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+}
+
+.signup-container {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
+}
+
+.signup-form input::placeholder {
+  color: black;
+  opacity: 1; /* Ensures full visibility in some browsers */
+}
+
+/* For better cross-browser support */
+.signup-form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+.signup-form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
 }
 
 .signup-form {
-  background-color: transparent;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
@@ -57,65 +86,75 @@
   align-items: center; /* Center items horizontally */
   width: 100%;
   max-width: 400px;
+  font-family: "Anton"
 }
 
-.signup-form h2, p {
+.signup-form h2,
+p {
   margin-bottom: 20px;
-  color: white;
-  font-family: 'DesirableCalligraphy', cursive;
+  color: rgb(2, 2, 2);
 }
 
 .signup-form input {
   width: 80%;
   padding: 10px;
   margin-bottom: 20px;
-  border: none;
+  border: solid black;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
+  outline: none;
 }
 
 .signup-form button {
-  padding: 10px 20px;
-  border: 1px solid #fff;
+  padding: 12px 20px;
+  border: 2px solid black; /* Matches the placeholder text color */
   background-color: transparent;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 14px;
+  color: black; /* Ensures text is visible */
+  border-radius: 0; /* Remove rounded corners if needed */
+  font-size: 16px;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
   cursor: pointer;
-  font-family: 'DesirableCalligraphy', cursive;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: none; /* Remove any unwanted shadows */
 }
 
 .signup-form button:hover {
-  background-color: #555;
-}
-
-@font-face {
-  font-family: 'DesirableCalligraphy';
-  src: url('./fonts/Desirable Calligraphy.ttf') format('truetype'),
-       url('./fonts/Desirable Calligraphy.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'DesirableSans';
-  src: url('./fonts/Desirable Sans.ttf') format('truetype'),
-       url('./fonts/Desirable Sans.otf') format('opentype');
-}
-
-body {
-  font-family: 'DesirableSans', sans-serif; /* Default font for body */
-}
-
-h2, h3 {
-  font-family: 'DesirableCalligraphy', cursive; /* Use Calligraphy for headings */
-}
-
-h3 {
+  background-color: black;
   color: white;
 }
 
+.signup-form p {
+  margin-top: 5px; /* Reduce space above "SIGN UP FOR LATEST DROPS" */
+}
+
+@font-face {
+  font-family: "DesirableCalligraphy";
+  src: url("./fonts/Desirable Calligraphy.ttf") format("truetype"),
+    url("./fonts/Desirable Calligraphy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DesirableSans";
+  src: url("./fonts/Desirable Sans.ttf") format("truetype"),
+    url("./fonts/Desirable Sans.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Anton";
+  src: url("./fonts/Anton-Regular.ttf") format("truetype");
+}
+
+
+h2 {
+  color: white;
+  font-size: 30px;
+}
+
 p {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
@@ -123,7 +162,7 @@ p {
     width: 90%;
   }
 
-  .signup-form input{
+  .signup-form input {
     width: 75%;
   }
 }
